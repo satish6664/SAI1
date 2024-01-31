@@ -25,6 +25,7 @@
 
     ul {
       display: flex;
+      flex-wrap: wrap;
       list-style: none;
       padding: 0;
     }
@@ -44,10 +45,11 @@
     }
     .div24
     {
-      display: flex;
+      /* background-color: black; */
       height: 450px;
       width: 300px;
     }
+
   </style>
   <title>Movie Selector</title>
 </head>
@@ -59,7 +61,7 @@
     <label for="endDate">End Date:</label>
     <input type="date" id="endDate">
 
-    <button onclick="showSelectedMovies()">Show Moviess</button>
+    <button onclick="showSelectedMovies()">Show Movies</button>
 
     <ul id="movieList"></ul>
 
@@ -70,8 +72,9 @@
       { title: 'BladeRunner', releaseDate: '2023-10-24', photo:"https://rukminim2.flixcart.com/image/850/1000/jf8khow0/poster/a/u/h/small-hollywood-movie-poster-blade-runner-2049-ridley-scott-original-imaf3qvx88xenydd.jpeg?q=90&crop=false" },
       { title: 'BlackPanter', releaseDate: '2023-11-10', photo:"https://www.washingtonpost.com/graphics/2019/entertainment/oscar-nominees-movie-poster-design/img/black-panther-web.jpg"},
       { title: 'OG', releaseDate: '2023-12-15', photo:"https://m.media-amazon.com/images/M/MV5BMjQxY2UyZGUtYjUzYS00NzIwLWJlZWEtMDAwOWRiY2Q1ZmUyXkEyXkFqcGdeQXVyMTIwOTIwMzI5._V1_.jpg" },
-      { title: 'Animal', releaseDate: '2024-01-01', photo:"https://m.media-amazon.com/images/I/91zTlD7AY1L.jpg" },
+      { title: 'Wakanda', releaseDate: '2024-01-01', photo:"https://www.movieposters.com/cdn/shop/products/wandavision.mp_240x360_crop_center.progressive.jpg?v=1614371756" },
       { title: 'RRR', releaseDate: '2024-01-10', photo:"https://i.pinimg.com/474x/02/f2/b1/02f2b17cc9fb4bbf887578747da3c315.jpg"},
+      { title: 'Rangasthalam', releaseDate: '2024-01-15', photo:"https://i0.wp.com/moviegalleri.net/wp-content/uploads/2018/02/Samantha-Ram-Charan-Rangasthalam-Movie-Valentines-Day-Special-Poster.jpg?ssl=1"},
       // Add more movies with release dates
     ];
 
